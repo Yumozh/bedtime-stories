@@ -11,9 +11,13 @@ public class Program {
         System.out.println("What story do you wan to read today? ");
         String storyName = scan.nextLine();
 
+        printStory(storyName);
 
+    }
+
+    private static void printStory(String storyName) {
         try {
-            FileReader fileReader = new FileReader("goldilocks.txt");
+            FileReader fileReader = new FileReader(storyName);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
             String input = bufferedReader.readLine();
