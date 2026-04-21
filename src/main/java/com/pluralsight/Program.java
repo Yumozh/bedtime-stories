@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("What story do you wan to read today? ");
+        System.out.println("What story do you want to read today? ");
         String storyName = scan.nextLine();
 
         printStory(storyName);
